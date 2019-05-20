@@ -1,7 +1,7 @@
 .wrapper .slide-img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .slide-img{
@@ -12,7 +12,7 @@
 
 .wrapper {
     display: inline-block;
-    height: 700px;
+    height: 800px;
     width: 100%;
     /* padding: 5px; */
     /* margin: 5px; */
