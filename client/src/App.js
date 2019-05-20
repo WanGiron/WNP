@@ -8,7 +8,7 @@ import Container from './components/Container';
 import Admin from './components/pages/Admin';
 import LoginLocal from './components/login-local';
 import PersonalAccount from './components/personal-account';
-import Slide7 from './components/pages/modules/Slide7';
+import Home from './components/Home';
 import Logout from './components/logout';
 import CardsModule from './components/pages/modules/CardsModule';
 // import Results from "./pages/Results";
@@ -67,7 +67,7 @@ class App extends Component {
           <NavbarMain />
           <div className="welcome-users"><h2>Welcome Users</h2></div>
           <Switch>
-            <Route exact path='/' render={() => (<Slide7 {...this.props} setUser={this.setUser} user={this.state.user}/>)}/>
+            <Route exact path='/' render={() => (<Home {...this.props} setUser={this.setUser} user={this.state.user}/>)}/>
             <Route exact path="/admin" render={() => (<Admin {...this.props} user={this.state.user} />)}/>            
         
             <Route path='/signup' component={SignUp} />
@@ -79,7 +79,7 @@ class App extends Component {
             } />
             <Route exact path="/photoWidgetUploader" component={PhotoWidgetUploader} />
           </Switch>
-          <CardsModule/>
+          
         </Container>
       </Router>
       </div>
