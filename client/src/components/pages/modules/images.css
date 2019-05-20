@@ -1,18 +1,19 @@
 .wrapper .slide-img{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .slide-img{
     margin: auto;
+    max-width: 1800px;
     /* margin-top: -250px;  */
     padding: 10px;
 }
 
 .wrapper {
     display: inline-block;
-    height: 800px;
+    height: 700px;
     width: 100%;
     /* padding: 5px; */
     /* margin: 5px; */
