@@ -1,0 +1,32 @@
+.nav-main {
+  display: flex;
+  padding-top: 16px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  width: 100vw;
+  background-color: #c46110;
+  border-bottom: solid #1091c4 4px;
+  /* box-shadow: 4px 4px 6px #8b8b8b; */
+
+}
+
+.nav-main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  list-style-type: none;
+  
+}
+
+.nav-item1{
+  padding-top: 10px;
+  transition: 0.3s;
+}
+
+.nav-item1:hover{
+  background-color:#1091c4;
+  color: white;
+}

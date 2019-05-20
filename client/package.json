@@ -1,0 +1,40 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5005/",
+  "secure": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@restart/context": "^2.1.4",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "cloudinary": "^1.14.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.4.2",
+    "react": "^16.8.6",
+    "react-alice-carousel": "^1.13.11",
+    "react-dom": "^16.8.6",
+    "react-easy-swipe": "^0.0.17",
+    "react-responsive-carousel": "^3.1.49",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
