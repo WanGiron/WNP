@@ -10,7 +10,7 @@ class Card1 extends React.Component {
                     <h5 className="card-title">More Info</h5>
                     <hr/>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-outline-info">Enter</a>
+                    <a href="#" className="btn btn-outline-info">Enter</a>
                 </div>
             </div>
         )

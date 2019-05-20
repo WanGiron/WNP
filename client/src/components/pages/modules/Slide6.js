@@ -30,7 +30,7 @@ class Slide6 extends React.Component {
     }
 //To render thumbnails//
     renderThumbs = () => {
-        const arrP = this.state.arrPhoto.map(i => i.url)
+        const arrP = this.state.arrPhoto.map(i => i.secure_url)
         return (<ul> {
             arrP.map((item, i) =>
                 <button>
