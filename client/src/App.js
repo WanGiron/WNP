@@ -65,7 +65,7 @@ class App extends Component {
         <Container>
           <NavbarUser user={this.state.user} logOut={this.logOut}/>
           <NavbarMain />
-          <div className="welcome-users"><h2>Welcome Users</h2></div>
+          <div className="welcome-users"><h2>Welcome!</h2></div>
           <Switch>
             <Route exact path='/' render={() => (<Home {...this.props} setUser={this.setUser} user={this.state.user}/>)}/>
             <Route exact path="/admin" render={() => (<Admin {...this.props} user={this.state.user} />)}/>            

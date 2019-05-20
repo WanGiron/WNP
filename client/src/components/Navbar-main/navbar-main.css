@@ -1,28 +1,27 @@
 .nav-main {
   display: flex;
-  padding-top: 16px;
-  height: 42px;
+  padding-top: 26px;
+  height: 46px;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
-  width: 100vw;
+  margin-top: 100px;
+  width: 100%;
   background-color: #c46110;
-  border-bottom: solid #1091c4 4px;
+  border-bottom: solid #616161 4px;
   /* box-shadow: 4px 4px 6px #8b8b8b; */
 
 }
 
-.nav-main ul {
+.nav-main ul{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 0px;
-  list-style-type: none;
-  
+  list-style-type: none;  
 }
 
 .nav-item1{
-  padding-top: 10px;
+  padding-top: 2px;
   transition: 0.3s;
 }
 

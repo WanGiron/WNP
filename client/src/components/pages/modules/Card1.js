@@ -7,9 +7,9 @@ class Card1 extends React.Component {
             <div className="card card1" style={{width:"18rem"}}>
                 <img src={Img1} className="card-img-top img-card1" alt="pic" />
                 <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">More Info</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-outline-info">Enter</a>
                 </div>
             </div>
         )

@@ -2,21 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './navbar-main.css';
 
-
-// <<<<<<< HEAD
-
-
-
-
-
-
-// =======
 const Navbar = props => (
   <nav className='nav-main navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"'>
     <ul>
       <li className="nav-item1"
        >
-        <Link to="/modern"
+        <Link to="/"
           className="nav-link nav-link1"
           style={{ textDecoration: "none", color: "white" }}>
           <span className="nav-hover">Weddings</span>
@@ -25,7 +16,7 @@ const Navbar = props => (
 
       <li className="nav-item1"
       >
-        <Link to="/luxury"
+        <Link to="/"
           className="nav-link nav-link1"
           style={{ textDecoration: "none", color: "white" }} >
           <span className="nav-hover">Portraits</span>
@@ -35,7 +26,7 @@ const Navbar = props => (
       <li className="nav-item1"
        
        >
-        <Link to="/decor"
+        <Link to="/"
           className="nav-link nav-link1"
           style={{ textDecoration: "none", color: "white" }} >
           <span className="nav-hover">Engagements</span>
@@ -44,7 +35,7 @@ const Navbar = props => (
 
       <li className="nav-item1"
         style={{  }}>
-        <Link to="/antique"
+        <Link to="/"
           className="nav-link nav-link1"
           style={{ textDecoration: "none", color: "white" }}>
           <span className="nav-hover">Events</span>
@@ -56,4 +47,3 @@ const Navbar = props => (
 );
 
 export default Navbar;
-// >>>>>>> f2701a2bbe69aa7c63d63b5a20482f4b18ca9f77
