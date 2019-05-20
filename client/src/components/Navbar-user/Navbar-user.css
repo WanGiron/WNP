@@ -15,6 +15,7 @@
     color: rgb(58, 58, 58);
 }
 .WNP-header{
+    font-size: 50px;
     height: content;
     margin: 0 auto;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -58,3 +59,15 @@
     background: black;
 }
 
+@media screen and (max-width: 600px) {
+.WNP-header{
+    font-size: 60px;
+    color: rgb(175, 75, 18);
+}
+
+.nav-user{
+    height: 50px;
+    padding: 0px;
+    padding-top: 10px;
+}
+}

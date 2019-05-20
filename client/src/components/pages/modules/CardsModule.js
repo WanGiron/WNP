@@ -7,9 +7,11 @@ import './cards.css'
 function CardsModule (props){
     return(
     <div className="container-fluid cards-div">
+    <div className="row">
         <Card1 />
         <Card2 />
         <Card3 />
+        </div>
     </div>)
 
 }

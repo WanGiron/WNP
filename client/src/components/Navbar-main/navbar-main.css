@@ -29,3 +29,10 @@
   background-color:#1091c4;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .nav-main{
+      margin-top: 70px;
+      
+  }
+  }
