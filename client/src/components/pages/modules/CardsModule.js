@@ -12,6 +12,13 @@ function CardsModule (props){
         <Card2 />
         <Card3 />
         </div>
+        <div className="container-fluid row-btn">
+        <div className="row">
+            <button className="btn btn-outline-dark btn-card">More info</button>
+            <button className="btn btn-outline-dark btn-card">Get to know me</button>
+            <button className="btn btn-outline-dark btn-card">Send me a message</button>
+            </div>
+        </div>
     </div>)
 
 }

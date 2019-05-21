@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const cName = process.env.REACT_APP_API_CLOUD_NAME;
+const uPreset = process.env.REACT_APP_API_UPLOAD_PRESET;
 
 class PhotoWidgetUploader extends Component {
 state={

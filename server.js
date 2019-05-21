@@ -282,5 +282,5 @@ db.sequelize.sync(syncOptions).then(function () {
         );
     });
 });
-
+console.log("test!!!!!!" + process.env.REACT_APP_MY_APP);
 module.exports = app;

@@ -26,6 +26,8 @@
     "cloudinary": "^1.14.0",
     "concurrently": "^4.1.0",
     "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "env-cmd": "^9.0.1",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
     "if-env": "^1.0.4",
