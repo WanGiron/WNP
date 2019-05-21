@@ -12,7 +12,9 @@
 .btn-card{
   display: none;
 }
-
+ .row-btn{
+   display: none;
+ }
 
 
 .img-card1{
