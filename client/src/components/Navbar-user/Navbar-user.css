@@ -1,24 +1,24 @@
 .nav-user{
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     /* align-items: baseline; */
-    padding-top: 30px;
-    border-top: 7px solid black;
-    position: fixed;
-    top: 0;
-    height: 100px;
+    padding-top: 20px;
+   
+    /* position: fixed; */
+    height: 60px;
     /* padding-bottom: ; */
-    width: 100vw;
+    width: 80%;
     background: #ffffff;
     /* background: #0c0c0c; */
     z-index: 100;
-    color: rgb(58, 58, 58);
+    color: rgb(161, 81, 15);
+    
 }
-
 .WNP-header{
-    font-size: 50px;
-    height: content;
-    margin: 0 auto;
+    /* font-size: 50px; */
+    height: 30px;
+    /* margin: 0 auto; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }

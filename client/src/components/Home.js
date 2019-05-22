@@ -1,6 +1,7 @@
 import React from 'react';
 import Slide7 from './pages/modules/Slide7';
 import CardsModule from './pages/modules/CardsModule';
+import Footer from './pages/modules/Footer';
 
 
 class Home extends React.Component {
@@ -8,7 +9,8 @@ class Home extends React.Component {
         return (
             <div>
                 <Slide7/>
-                <CardsModule />
+                <Footer/>
+                {/* <CardsModule /> */}
             </div>
         )
     }

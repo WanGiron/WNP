@@ -1,8 +1,8 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import './images.css';
-class Slide7 extends React.Component {
+import './portfolio.css';
+class Weddings extends React.Component {
     state = {
         arrPhoto: []
     }
@@ -22,7 +22,7 @@ class Slide7 extends React.Component {
     }
     //getting Photos fro API//
     getPhotos = () => {
-        fetch('/api/get_photos/home')
+        fetch('/api/get_photos/decor')
             .then(res => res.json())
             .then(arrPhoto => this.setState({
                 arrPhoto: arrPhoto.resources
@@ -30,11 +30,11 @@ class Slide7 extends React.Component {
     }
 //To render thumbnails//
     renderThumbs = () => {
-        const arrP = this.state.arrPhoto.map(i => i.url)
-        return (<ul> {
+        const arrP = this.state.arrPhoto.map(i => i.secure_url)
+        return (<ul className="thumbnail-list"> {
             arrP.map((item, i) =>
-                <button>
-                    <img src={item} key={i} style={{ width: "150", height: "80px" }} onClick={() => this.Carousel._onDotClick(i)} />
+                <button className="img-btn" >
+                    <img src={item} className="thumbnail-image" key={i}  onClick={() => this.Carousel._onDotClick(i)} />
                 </button>)}
         </ul>);
     }
@@ -45,25 +45,26 @@ class Slide7 extends React.Component {
         const arr2 = arr.map(i =>  <div className="wrapper"><img className="slide-img" src={i.url}/></div>)
 
         return (
-            <div >
+            <div>
                 <AliceCarousel items={arr2}
-                    dotsDisabled={true}
-                    buttonsDisabled={false}
+                    dotsDisabled={false}
+                    buttonsDisabled={true}
                     responsive={this.responsive}
                     autoPlayInterval={2000}
                     autoPlayDirection="rtl"
                     autoPlay={true}
                     fadeOutAnimation={true}
                     ref={el => this.Carousel = el} />
-                    {/* <div className="carousel-div">
-                <button onClick={() => this.Carousel._slidePrev()} className="left"> Prev button </button>
-                <button onClick={() => this.Carousel._slideNext()} className="right" > Next button </button>
+           
+                {/* <button onClick={() => this.Carousel._slidePrev()}> Prev button </button> */}
+                {/* <button onClick={() => this.Carousel._slideNext()} > Next button </button> */}
+                <div className="thumbnails">
                 {this.renderThumbs()}
-                </div> */}
             </div>
-            
+
+            </div>
         );
     }
 }
 
-export default Slide7;
+export default Weddings;

@@ -1,0 +1,36 @@
+.footer{
+    color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    /* height: 20px; */
+    /* border: solid black 1px; */
+    margin: 0 auto; 
+    margin-top: -18px; 
+}
+
+.footer-lines{
+    float: left;
+    width: 100px;
+}
+
+.footer-list{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.copyright{
+    padding-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(80, 80, 80);
+}
+
+.footer-lines:hover{
+    color: white;
+    transform: scale(1.1);
+    text-decoration-line: underline;
+    
+  }
+  

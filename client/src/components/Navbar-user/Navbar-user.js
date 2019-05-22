@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Navbar-user.css';
-import Logo from './logo.svg';
+import Logo from './logo-web.png';
 
 import Axios from "axios";
 
@@ -33,8 +33,8 @@ class NavbarUser extends React.Component {
           style={{ textDecoration: "none", color: "black" }}>
           <i className="fa fa-home" style={{ marginLeft: "10px", marginTop: "6px", color: "darkGray", fontSize: "30px" }}></i>
         </Link>
-
-       <div className="WNP-header"><h1 className="WNP">William Navas Photo</h1></div>
+        
+       <div className="WNP-header"><h3 className="WNP">William Navas Photo</h3></div>
         {/* <ul>
           {(!this.props.user ? (<li className="nav-item"> <Link to="/signup" className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p className="nav-hover" style={{ color: 'black' }}><i className="far fa-user"></i>Sign Up</p> </Link> </li>) : "")}
           {(!this.props.user ? (<li className="nav-item"><Link to="/login-local" className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p className="nav-hover" style={{ color: 'black' }}><i className="far fa-user"></i> Log In</p> </Link> </li>) : "")}

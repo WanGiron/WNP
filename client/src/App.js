@@ -10,7 +10,7 @@ import LoginLocal from './components/login-local';
 import PersonalAccount from './components/personal-account';
 import Home from './components/Home';
 import Logout from './components/logout';
-import CardsModule from './components/pages/modules/CardsModule';
+import Weddings from './components/pages/Weddings';
 // import Results from "./pages/Results";
 
 import PhotoWidgetUploader from './components/PhotoWidgetUploader';
@@ -65,10 +65,10 @@ class App extends Component {
         <Container>
           <NavbarUser user={this.state.user} logOut={this.logOut}/>
           <NavbarMain />
-          <div className="welcome-users"><h2>Welcome!</h2></div>
           <Switch>
             <Route exact path='/' render={() => (<Home {...this.props} setUser={this.setUser} user={this.state.user}/>)}/>
             <Route exact path="/admin" render={() => (<Admin {...this.props} user={this.state.user} />)}/>            
+            <Route exact path="/weddings" render={() => (<Weddings {...this.props} user={this.state.user} />)}/>            
         
             <Route path='/signup' component={SignUp} />
             <Route exact path="/login-local" render={() => (<LoginLocal {...this.props} setUser={this.setUser} user={this.state.user} />)} />
