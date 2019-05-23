@@ -117,7 +117,7 @@ app.get('/api/get_photos/home', (req, res) => {
 });
 
 // Getting images with tag 'luxury'//
-app.get('/api/get_photos/luxury', (req, res) => {
+app.get('/api/get_photos/weddings', (req, res) => {
     // cloudinary.v2.api.resources_by_tag('tag name') to get images with tag name
     cloudinary.v2.api.resources_by_tag('luxury',
     {max_results: 20},

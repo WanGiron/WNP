@@ -22,7 +22,7 @@ class Weddings extends React.Component {
     }
     //getting Photos fro API//
     getPhotos = () => {
-        fetch('/api/get_photos/decor')
+        fetch('/api/get_photos/weddings')
             .then(res => res.json())
             .then(arrPhoto => this.setState({
                 arrPhoto: arrPhoto.resources
