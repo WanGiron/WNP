@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import Images from './modules/Images';
 import './weddings.css';
 import axios from "axios";
+import { FacebookShareButton, FacebookIcon, FacebookShareCount } from 'react-share';
+
 
 const customStyles = {
     content: {
@@ -48,7 +50,7 @@ class Weddings extends React.Component {
 
     handleClick = (url) => {
         const fav = url;
-        this.setState({modalUrl: url});
+        this.setState({ modalUrl: url });
     }
 
     openModal() {
@@ -66,12 +68,24 @@ class Weddings extends React.Component {
 
     render() {
         const photosUrl = this.state.arrPhoto.map(
-            (images) => <Images
+            (images) => <div><Images
                 email={this.state.name}
                 key={images.public_id}
                 id={images.public_id}
                 url={images.url}
-                handleClick={this.handleClick}/>
+                handleClick={this.handleClick} />
+                <button>
+                <FacebookShareButton
+                    className="facebook-btn"
+                    hashtag="Wiliam-Navas-Photo"
+                    url={images.url}
+                    quote={"Great!"}>
+                    <FacebookIcon size={"30px"} />
+                </FacebookShareButton>
+                </button>
+
+            </div>
+
         )
         return (
             <div>
@@ -81,9 +95,10 @@ class Weddings extends React.Component {
                         <i style={{ fontSize: "50px" }}>Weddings</i>
                     </div>
                     <div className="container container-img">
-                    <div className="row row-img">
-                    <div  className="photo-container" onClick={this.openModal}>{photosUrl}</div>
-                    </div>
+                        <div className="row row-img">
+                            <div className="photo-container" onClick={this.openModal}>{photosUrl}</div>
+
+                        </div>
                     </div>
                 </div>
                 {/* <div className="img-btn" onClick={this.openModal}>Open Modal</div> */}
@@ -94,7 +109,7 @@ class Weddings extends React.Component {
                     style={customStyles}
                     contentLabel="Example Modal">
                     <button className="close-btn-modal" onClick={this.closeModal}>close</button>
-                    <div className="modal-img-div"><img className="modal-img" style={{width:"100%", height:"100%", objectFit:"contain", maxHeight:"700px", maxWidth:"1000px"}} src={this.state.modalUrl}/></div>
+                    <div className="modal-img-div"><img className="modal-img" style={{ width: "100%", height: "100%", objectFit: "contain", maxHeight: "700px", maxWidth: "1000px" }} src={this.state.modalUrl} /></div>
                 </Modal>
             </div>
         );
