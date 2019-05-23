@@ -37,8 +37,7 @@
     background-color: rgb(160, 86, 16);
     color: white;
     margin: 0 center;
-    text-align: center;
-
+    text-align: center; 
     border: solid rgb(112, 49, 6) 1px;
 }
 
@@ -46,3 +45,5 @@
     background-color: rgb(63, 63, 63);
     color: orange;
 }
+
+
