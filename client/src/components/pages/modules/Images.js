@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Images(props) {
     return (
         <div className="img-div">
-            <div  className="img-btn" onClick={() => props.handleClick(props.url)} style={{ backgroundImage: `url(${props.url})`}} />
+            <img  className="img-btn" onClick={() => props.handleClick(props.url)} src={props.url} />
 
             {(props.email !== undefined) ? <a href="#" style={{ textDecoration: "none", fontSize: "25px", marginRight: "10px" }}
                 className="heart" onClick={() => props.handleClick(props.url)}

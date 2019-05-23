@@ -1,67 +1,101 @@
 import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-import './portfolio.css';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
+import Images from './modules/Images';
+import './weddings.css';
+import axios from "axios";
+
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)'
+    }
+};
+
+// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
+Modal.setAppElement('#root');
+
 class Weddings extends React.Component {
-    state = {
-        arrPhoto: []
-    }
-    responsive = {
-        0: { items: 1 },
-        1024: { items: 1 },
-    }
+    constructor() {
+        super();
 
-    stagePadding={
-        paddingLeft: 20,     
-        paddingRight: 20
+        this.state = {
+            modalIsOpen: false,
+            arrPhoto: [],
+            //   name: this.props.user.email
+        };
+
+        this.openModal = this.openModal.bind(this);
+        this.afterOpenModal = this.afterOpenModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
-
-
-    componentDidMount = () => {
+    // Fetch the list on first mount
+    componentDidMount() {
         this.getPhotos();
+        this.setState({ name: this.props.user.email });
     }
-    //getting Photos fro API//
+
     getPhotos = () => {
         fetch('/api/get_photos/weddings')
             .then(res => res.json())
-            .then(arrPhoto => this.setState({
-                arrPhoto: arrPhoto.resources
-            }));
+            .then(arrPhoto => this.setState({ arrPhoto: arrPhoto.resources }));
+        console.log(this.state.list);
     }
-//To render thumbnails//
-    renderThumbs = () => {
-        const arrP = this.state.arrPhoto.map(i => i.secure_url)
-        return (<ul className="thumbnail-list"> {
-            arrP.map((item, i) =>
-                <button className="img-btn" >
-                    <img src={item} className="thumbnail-image" key={i}  onClick={() => this.Carousel._onDotClick(i)} />
-                </button>)}
-        </ul>);
+
+    handleClick = (url) => {
+        const fav = url;
+        this.setState({modalUrl: url});
+    }
+
+    openModal() {
+        this.setState({ modalIsOpen: true });
+    }
+
+    afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        // this.subtitle.style.color = '#f00';
+    }
+
+    closeModal() {
+        this.setState({ modalIsOpen: false });
     }
 
     render() {
-        const arr = this.state.arrPhoto;
-        const items = arr.map(im => im.url);
-        const arr2 = arr.map(i =>  <div className="wrapper1"><img className="slide-img1" style={{width:"100%", height:"100%", objectFit:"contain"}} src={i.url}/></div>)
-
+        const photosUrl = this.state.arrPhoto.map(
+            (images) => <Images
+                email={this.state.name}
+                key={images.public_id}
+                id={images.public_id}
+                url={images.url}
+                handleClick={this.handleClick}/>
+        )
         return (
             <div>
-                <AliceCarousel items={arr2}
-                    dotsDisabled={false}
-                    buttonsDisabled={true}
-                    responsive={this.responsive}
-                    autoPlayInterval={2000}
-                    autoPlayDirection="rtl"
-                    autoPlay={true}
-                    fadeOutAnimation={true}
-                    ref={el => this.Carousel = el} />
-           
-                {/* <button onClick={() => this.Carousel._slidePrev()}> Prev button </button> */}
-                {/* <button onClick={() => this.Carousel._slideNext()} > Next button </button> */}
-                <div className="thumbnails">
-                {this.renderThumbs()}
-            </div>
-
+                <div>
+                    <br />
+                    <div className="jumbotron-fluid text-center">
+                        <i style={{ fontSize: "50px" }}>Weddings</i>
+                    </div>
+                    <div className="container container-img">
+                    <div className="row row-img">
+                    <div  className="photo-container" onClick={this.openModal}>{photosUrl}</div>
+                    </div>
+                    </div>
+                </div>
+                {/* <div className="img-btn" onClick={this.openModal}>Open Modal</div> */}
+                <Modal
+                    isOpen={this.state.modalIsOpen}
+                    onAfterOpen={this.afterOpenModal}
+                    onRequestClose={this.closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal">
+                    <button className="close-btn-modal" onClick={this.closeModal}>close</button>
+                    <div style={{height:"700px", width:"100%"}}><img style={{width:"100%", height:"100%", objectFit:"contain"}} src={this.state.modalUrl}/></div>
+                </Modal>
             </div>
         );
     }
