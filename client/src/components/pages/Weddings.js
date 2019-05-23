@@ -94,7 +94,7 @@ class Weddings extends React.Component {
                     style={customStyles}
                     contentLabel="Example Modal">
                     <button className="close-btn-modal" onClick={this.closeModal}>close</button>
-                    <div style={{height:"100%", width:"100%"}}><img style={{width:"100%", height:"100%", objectFit:"contain"}} src={this.state.modalUrl}/></div>
+                    <div className="modal-img-div"><img style={{width:"100%", height:"100%", objectFit:"contain"}} src={this.state.modalUrl}/></div>
                 </Modal>
             </div>
         );
