@@ -62,8 +62,13 @@
 
 @media screen and (max-width: 500px) {
     .modal-img-div{
-        width: 500px;
-        height: 500px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .modal-img{
+        max-width: 400px;
+        max-height: auto;
     }
     
   }
