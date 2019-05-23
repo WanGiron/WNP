@@ -11,6 +11,7 @@ import PersonalAccount from './components/personal-account';
 import Home from './components/Home';
 import Logout from './components/logout';
 import Weddings from './components/pages/Weddings';
+import Portraits from './components/pages/Portraits';
 // import Results from "./pages/Results";
 
 import PhotoWidgetUploader from './components/PhotoWidgetUploader';
@@ -68,7 +69,8 @@ class App extends Component {
           <Switch>
             <Route exact path='/' render={() => (<Home {...this.props} setUser={this.setUser} user={this.state.user}/>)}/>
             <Route exact path="/admin" render={() => (<Admin {...this.props} user={this.state.user} />)}/>            
-            <Route exact path="/weddings" render={() => (<Weddings {...this.props} user={this.state.user} />)}/>            
+            <Route exact path="/weddings" render={() => (<Weddings {...this.props} user={this.state.user} />)}/> 
+            <Route exact path="/portraits" render={() => (<Portraits {...this.props} user={this.state.user} />)}/>              
         
             <Route path='/signup' component={SignUp} />
             <Route exact path="/login-local" render={() => (<LoginLocal {...this.props} setUser={this.setUser} user={this.state.user} />)} />

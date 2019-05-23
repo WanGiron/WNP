@@ -21,6 +21,7 @@
     "react-alice-carousel": "^1.13.11",
     "react-dom": "^16.8.6",
     "react-easy-swipe": "^0.0.17",
+    "react-modal": "^3.8.1",
     "react-responsive-carousel": "^3.1.49",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8"

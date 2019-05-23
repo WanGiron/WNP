@@ -1,0 +1,46 @@
+
+
+.img-btn {
+    width:300px;
+    height: 300px;
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .img-btn:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+.img-div{
+    border-radius:0px;
+}
+
+.photo-container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative; 
+    
+}
+
+.close-btn-modal{
+    background-color: rgb(160, 86, 16);
+    color: white;
+    margin: 0 auto;
+    border: solid rgb(112, 49, 6) 1px;
+}
+
+.close-btn-modal:hover{
+    background-color: rgb(63, 63, 63);
+    color: orange;
+}
