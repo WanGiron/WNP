@@ -6,8 +6,11 @@
 }
 
 .slide-img{
+  border-bottom: solid #854b09 4px;
+  border-top: solid #854b09 4px;
     margin: auto;
-    max-width: 80%;
+    width: 50%;
+    height: 50%;
     /* margin-top: -250px;  */
     /* padding: 10px; */
 }
@@ -16,8 +19,8 @@
   margin: auto;
     display: flex;
     justify-content: center;
-    height: 600px;
-    width: 80%px;
+    max-height: 700px;
+    max-width: 80%;
     /* padding: 5px; */
     /* margin: 5px; */
   }

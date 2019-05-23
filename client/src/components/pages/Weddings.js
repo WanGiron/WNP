@@ -42,7 +42,7 @@ class Weddings extends React.Component {
     render() {
         const arr = this.state.arrPhoto;
         const items = arr.map(im => im.url);
-        const arr2 = arr.map(i =>  <div className="wrapper"><img className="slide-img" src={i.url}/></div>)
+        const arr2 = arr.map(i =>  <div className="wrapper1"><img className="slide-img1" style={{width:"100%", height:"100%", objectFit:"contain"}} src={i.url}/></div>)
 
         return (
             <div>

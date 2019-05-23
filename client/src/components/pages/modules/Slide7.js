@@ -42,10 +42,10 @@ class Slide7 extends React.Component {
     render() {
         const arr = this.state.arrPhoto;
         const items = arr.map(im => im.url);
-        const arr2 = arr.map(i =>  <div className="wrapper"><img className="slide-img" src={i.url}/></div>)
+        const arr2 = arr.map(i =>  <div className="wrapper"><img className="slide-img"src={i.url}/></div>)
 
         return (
-            <div >
+            <div>
                 <AliceCarousel items={arr2}
                     dotsDisabled={true}
                     buttonsDisabled={false}

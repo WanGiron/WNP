@@ -1,32 +1,32 @@
-.wrapper .slide-img{
-    height: 100%;
+/* .wrapper1 .slide-img1{
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     
-}
+}  */
 
-.slide-img{
+.slide-img1{
+  
     margin: auto;
-    max-width: 80%;
+    max-height: 100%;
+    max-width: 100%;
+    
+    /* width:fit-content;
+    height: fit-content; */
+    /* max-width: 100%; */
+
     /* margin-top: -250px;  */
     /* padding: 10px; */
 }
 
-.wrapper {
-  margin: auto;
+.wrapper1 {
+  margin: 0 auto;
     display: flex;
     justify-content: center;
     height: 600px;
-    width: 80%px;
-    /* padding: 5px; */
-    /* margin: 5px; */
+    width: 80%;
   }
 
-  .social-icons{
-  float: right;
-  /* background-color: white; */
-  padding : 10px;
-  }
 
   .alice-carousel__dots{
     margin: 0 auto;
@@ -50,7 +50,9 @@
   }
 
   .thumbnails {
-    border: solid black 1px;
+    /* border: solid black 1px; */
+    border-radius: 5px;
+    background-color: rgba(156, 101, 38, 0.795);
     margin: 0 auto;
     overflow-x:scroll;
     overflow-y: hidden;
@@ -64,11 +66,12 @@
 
 .img-btn{
   margin: 0 auto;
-  margin-left:2px;
-    margin-right: 2px;
+  /* border: 1px; */
+  margin-top: 8px;
+  margin-right: 8px;
   padding: 0px;
-  max-height: 200px;
-  max-width: 200px;
+  height: 120px;
+  width: 100px;
 }
 
 .thumbnail-image {
@@ -80,8 +83,7 @@
 .thumbnails .thumbnail-image{
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  
+  object-fit: cover;  
 }
 
 .thumbnail-list{
