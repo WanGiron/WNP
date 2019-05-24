@@ -7,7 +7,7 @@ import './App.css';
 import Container from './components/Container';
 import Admin from './components/pages/Admin';
 import LoginLocal from './components/login-local';
-import PersonalAccount from './components/personal-account';
+import UserSite from './components/pages/UserSite';
 import Home from './components/Home';
 import Logout from './components/logout';
 import Weddings from './components/pages/Weddings';
@@ -72,9 +72,9 @@ class App extends Component {
             <Route exact path="/weddings" render={() => (<Weddings {...this.props} user={this.state.user} />)}/> 
             {/* <Route exact path="/portraits" render={() => (<Portraits {...this.props} user={this.state.user} />)}/>               */}
             <Route exact path="/login-local" render={() => (<LoginLocal {...this.props} setUser={this.setUser} user={this.state.user} />)} />
-            <Route exact path="/personal-account" render={
+            <Route exact path="/usersite" render={
               () => (
-                <PersonalAccount {...this.props} setUser={this.setUser} user={this.state.user} />
+                <UserSite {...this.props} setUser={this.setUser} user={this.state.user} />
               )
             } />
             <Route exact path="/photoWidgetUploader" component={PhotoWidgetUploader} />

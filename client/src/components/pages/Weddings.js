@@ -74,15 +74,6 @@ class Weddings extends React.Component {
                 id={images.public_id}
                 url={images.url}
                 handleClick={this.handleClick} />
-                <button>
-                <FacebookShareButton
-                    className="facebook-btn"
-                    url={images.url}
-                    quote={"Great!"}>
-                    <FacebookIcon size={"30px"} />
-                </FacebookShareButton>
-                </button>
-
             </div>
 
         )

@@ -1,6 +1,7 @@
 import React, { Component, Redirect } from 'react';
 // import AUTHAPI from '../utils/google-auth';
 import axios from 'axios';
+import Images from './pages/modules/Images1';
 import { Link } from 'react-router-dom';
 
 class PersonalAccount extends Component {
@@ -12,11 +13,6 @@ class PersonalAccount extends Component {
 
     componentDidMount() {
         this.getUsers();
-        // AUTHAPI.getUserData().then( userResponse => {
-        //     if(userResponse.data){
-        //         props.setUser(userResponse.data);
-        //     }
-       // })
     }
     
 
@@ -51,13 +47,13 @@ class PersonalAccount extends Component {
                     //  ${this.props.user.email}
                     <div>
                         <h3>Welcome!!!</h3>
-                        {/* <div className="container">
+                        <div className="container">
                         {favs.map(favsUrl => (
                             <Images key={favsUrl.id}
                                 url={favsUrl.item_name}
                                 handleClickDelete={this.handleClickDelete} />
                         ))}
-                        </div> */}
+                        </div>
                     </div>
                 ) : (<p>{`Please sign in at `} <Link to="/">Homepage</Link> </p>)}
             </div>
