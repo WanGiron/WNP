@@ -2,7 +2,7 @@
     margin: 0 auto;
     /* border: solid black 1px; */
     width: 80%;
-    padding-left:20px; 
+    /* padding-left:20px;  */
 }
 
 .photo-container-admin{
@@ -73,4 +73,17 @@
 
 .nav-item-admin:hover{
     text-decoration-line: underline;
+}
+
+.btn-submit{
+    background-color: rgb(160, 86, 16);
+    color: white;
+    margin: 0 center;
+    text-align: center; 
+    border: solid rgb(112, 49, 6) 1px;
+    border-radius: 0px;
+}
+
+.btn-submit:hover{
+    background-color: rgb(206, 134, 0);
 }

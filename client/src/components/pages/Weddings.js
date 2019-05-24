@@ -77,7 +77,6 @@ class Weddings extends React.Component {
                 <button>
                 <FacebookShareButton
                     className="facebook-btn"
-                    hashtag="Wiliam-Navas-Photo"
                     url={images.url}
                     quote={"Great!"}>
                     <FacebookIcon size={"30px"} />
@@ -92,7 +91,7 @@ class Weddings extends React.Component {
                 <div>
                     <br />
                     <div className="jumbotron-fluid text-center">
-                        <i style={{ fontSize: "50px" }}>Weddings</i>
+                        <i className="header-cat" style={{ fontSize: "50px" }}>Weddings</i>
                     </div>
                     <div className="container container-img">
                         <div className="row row-img">
@@ -109,7 +108,7 @@ class Weddings extends React.Component {
                     style={customStyles}
                     contentLabel="Example Modal">
                     <button className="close-btn-modal" onClick={this.closeModal}>close</button>
-                    <div className="modal-img-div"><img className="modal-img" style={{ width: "100%", height: "100%", objectFit: "contain", maxHeight: "700px", maxWidth: "1000px" }} src={this.state.modalUrl} /></div>
+                    <div className="modal-img-div"><img className="modal-img" style={{ width: "100%", height: "100%", objectFit: "contain", maxHeight: "800px", maxWidth: "1100px" }} src={this.state.modalUrl} /></div>
                 </Modal>
             </div>
         );

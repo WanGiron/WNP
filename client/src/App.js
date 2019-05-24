@@ -21,7 +21,7 @@ import NavbarMain from "./components/Navbar-main/Navbar-main";
 import NavbarUser from "./components/Navbar-user/Navbar-user";
 
 
-import SignUp from './components/SignUp';
+// import SignUp from './components/SignUp';
 
 import LocalAPI from './utils/local-auth';
 
@@ -71,8 +71,6 @@ class App extends Component {
             <Route exact path="/admin" render={() => (<Admin {...this.props} user={this.state.user} />)}/>            
             <Route exact path="/weddings" render={() => (<Weddings {...this.props} user={this.state.user} />)}/> 
             {/* <Route exact path="/portraits" render={() => (<Portraits {...this.props} user={this.state.user} />)}/>               */}
-        
-            <Route path='/signup' component={SignUp} />
             <Route exact path="/login-local" render={() => (<LoginLocal {...this.props} setUser={this.setUser} user={this.state.user} />)} />
             <Route exact path="/personal-account" render={
               () => (

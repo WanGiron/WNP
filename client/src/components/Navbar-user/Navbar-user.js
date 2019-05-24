@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Navbar-user.css';
-import Logo from './logo-web.png';
 
 import Axios from "axios";
 
@@ -36,7 +35,7 @@ class NavbarUser extends React.Component {
         
        <div className="WNP-header"><h3 className="WNP">William Navas Photo</h3></div>
         <ul>
-          {(!this.props.user ? (<li className="nav-item"> <Link to="/signup" className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p className="nav-hover" style={{ color: 'black' }}><i className="far fa-user"></i>Sign Up</p> </Link> </li>) : "")}
+          {/* {(!this.props.user ? (<li className="nav-item"> <Link to="/signup" className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p className="nav-hover" style={{ color: 'black' }}><i className="far fa-user"></i>Sign Up</p> </Link> </li>) : "")} */}
           {(!this.props.user ? (<li className="nav-item"><Link to="/login-local" className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p className="nav-hover" style={{ color: 'black' }}><i className="far fa-user"></i> Log In</p> </Link> </li>) : "")}
           {(this.props.user.name === 'Admin' ? (<li className="nav-item"><Link to="/admin" className="nav-link" style={{ textDecoration: "none", color: "black" }}><p className="nav-hover" style={{ color: 'white' }}><strong>{this.props.user.name}</strong></p> </Link></li>) : "")}
           {(this.props.user.name !== 'Admin' ? (<li className="nav-item"><Link to="/personal-account" className="nav-link" style={{ textDecoration: "none", color: "black" }}><p className="nav-hover" style={{ color: 'white', fontSize: "20px" }}><strong>{this.props.user.name}</strong></p> </Link></li>) : "")}

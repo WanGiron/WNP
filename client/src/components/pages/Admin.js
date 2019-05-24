@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Route, Redirect, Switch, BrowserRouter as Router } from 'react-router-dom';
 import Widget from '../PhotoWidgetUploader';
+
 //Import components for admin site //
-import Welcome from './admin-Components/Welcome';
+
 import './admin-Components/admin.css';
+import WeddingsAdmin from './admin-Components/WeddingsAdmin';
+import NavbarAdmin from './admin-Components/NavbarAdmin';
+import SignUp from './admin-Components/SignUp';
+import Welcome from './admin-Components/Welcome';
 
 class Admin extends Component {
     // Initialize the state
@@ -49,11 +54,15 @@ class Admin extends Component {
             return (
             
                 <div>
+                   
                 <Router>
                     <div className='admin-body'>
-                    <Widget/>
+                    <NavbarAdmin />
+                    {/* <Widget/> */}
                         <Switch>
-                            
+                        <Route path='/admin' component={Welcome} />
+                        <Route exact path='/weddingsadmin' component={WeddingsAdmin} />
+                        <Route path='/signup' component={SignUp} />
                         </Switch>
     
                     </div>

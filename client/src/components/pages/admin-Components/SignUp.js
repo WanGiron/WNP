@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import LOCALAPI from '../utils/local-auth';
+import LOCALAPI from '../../../utils/local-auth';
 import { Redirect } from 'react-router-dom';
+import './admin.css';
 
 
-class LoginLocal extends Component {
+class SignUp extends Component {
     state = {
         name: "",
         email: "",
@@ -53,10 +54,9 @@ class LoginLocal extends Component {
                 <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                     <div class="card card-signin my-5 bg-light">
                         <div class="card-body">
-                            <h5 class="card-title text-center header">Sign Up</h5>
+                            <h5 class="card-title text-center header">Add new client</h5>
                             <form className="form-signin" method="post">
-                                <div>Name:</div>
-                                <label htmlFor="name" />
+                                <label htmlFor="name">Name:</label>
                                 <input
                                     value={this.state.name}
                                     onChange={this.handleInputChange}
@@ -66,9 +66,8 @@ class LoginLocal extends Component {
                                     placeholder="Type in name"
                                     id="name"
                                     required />
-
-                                <div>Email:</div>
-                                <label htmlFor="email" />
+                                    <hr/>
+                                <label htmlFor="email">User name:</label>
                                 <input
                                     value={this.state.email}
                                     onChange={this.handleInputChange}
@@ -79,8 +78,8 @@ class LoginLocal extends Component {
                                     id="email"
                                     required />
 
-                                <div>Password:</div>
-                                <label htmlFor="password" />
+                                <hr/>
+                                <label htmlFor="password" >Password:</label>
                                 <input
                                     value={this.state.password}
                                     onChange={this.handleInputChange}
@@ -90,7 +89,8 @@ class LoginLocal extends Component {
                                     placeholder="Type in Password"
                                     id="password"
                                     required />
-                                <input type="Submit" onClick={this.handleFormSubmit} className="mt-2 btn-sm btn-primary text-uppercase" value="Submit" />
+                                     <hr/>
+                                <input type="Submit" onClick={this.handleFormSubmit} className="mt-2 btn-sm btn-submit text-uppercase" value="Submit" />
                             </form>
                             {this.state.errorMessage}
                         </div>
@@ -101,4 +101,4 @@ class LoginLocal extends Component {
     }
 }
 
-export default LoginLocal;
+export default SignUp;

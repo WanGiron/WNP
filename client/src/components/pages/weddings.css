@@ -1,8 +1,8 @@
 
 .img-btn {
     margin: 4px;
-    width:300px;
-    height: 340px;
+    width:200px;
+    height: 240px;
     object-fit: cover;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -19,7 +19,7 @@
   }
 
 .img-div{
-    min-width: 300px;
+    min-width: 200px;
     border-radius:0px;
 }
 
@@ -58,6 +58,11 @@
     object-fit: contain;
     width: fit-content;
     height: fit-content;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+.header-cat{
+    
 }
 
 @media screen and (max-width: 500px) {
