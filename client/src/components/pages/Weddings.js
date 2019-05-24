@@ -82,8 +82,9 @@ class Weddings extends React.Component {
                 <div>
                     <br />
                     <div className="jumbotron-fluid text-center">
-                        <i className="header-cat" style={{ fontSize: "50px" }}>Weddings</i>
+                        <i className="header-cat" style={{ fontSize: "30px" }}>Weddings</i>
                     </div>
+                    <hr/>
                     <div className="container container-img">
                         <div className="row row-img">
                             <div className="photo-container" onClick={this.openModal}>{photosUrl}</div>

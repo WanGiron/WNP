@@ -58,6 +58,7 @@
   margin: 4px;
   width:fit-content;
   height: fit-content;
+  border: none;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);

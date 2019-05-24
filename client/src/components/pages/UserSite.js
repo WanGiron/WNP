@@ -100,21 +100,12 @@ class UserSite extends Component {
         </div>)
 
         return (
-            // <div>
-            //     {this.props.user.email ? (
-            //         <div>
-            //             <h3>Welcome!!!</h3>
-            //             <div className="container">
-            //             {favs.map(favsUrl => (
-            //                 <Images key={favsUrl.id}
-            //                     url={favsUrl.secure_url}
-            //                     handleClickDelete={this.handleClickDelete} />
-            //             ))}
-            //             </div>
-            //         </div>
-            //     ) : (<p>{`Please sign in at `} <Link to="/">Homepage</Link> </p>)}
-            // </div>
             <div>
+                <br />
+                    <div className="jumbotron-fluid text-center">
+                        <i className="header-cat" style={{ fontSize: "30px" }}>{this.props.user.name} site</i>
+                    </div>
+                <hr/>
                 <AliceCarousel items={arr2}
                     dotsDisabled={false}
                     buttonsDisabled={true}

@@ -69,8 +69,7 @@ class LoginLocal extends Component{
             <h5 class="card-title text-center" >Log In</h5>
                 <form className="form-signin">
                     <div className="form-label-group">
-                        <div>Email:</div>
-                        <label htmlFor="email" />
+                        <label htmlFor="email">User name</label>
                         <input
                         value={this.state.email}
                         onChange={this.handleInputChange}
@@ -78,12 +77,11 @@ class LoginLocal extends Component{
                         type="text"
                         className="form-control"
                         placeholder="Type in Email"
-                        id="email"
-                        />
+                        id="email"/>
                     </div>
+                    <hr/>
                     <div className="form-label-group">
-                        <div>Password:</div>
-                        <label htmlFor="password" />
+                        <label htmlFor="password">Password</label>
                         <input
                         value={this.state.password}
                         onChange={this.handleInputChange}
@@ -91,12 +89,11 @@ class LoginLocal extends Component{
                         type="password"
                         className="form-control"
                         placeholder="Type in Password"
-                        id="password"
-                        />
-                    </div>
-                                    
-                    <button type="submit" onClick={this.handleFormSubmit} className="mt-2 btn-sm btn-primary text-uppercase">
-                        LogIn
+                        id="password"/>
+                    </div> 
+                    <hr/>               
+                    <button type="submit" onClick={this.handleFormSubmit} className="mt-2 btn-sm btn-submit text-uppercase">
+                        Login
                         </button>
                     </form>
                     {this.state.errorMessage}
