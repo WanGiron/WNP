@@ -1,9 +1,8 @@
 
 .img-btn {
-    margin: 4px;
-    width:200px;
-    height: 200px;
-    object-fit: cover;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -19,8 +18,10 @@
   }
 
 .img-div{
-    min-width: 200px;
-    border-radius:0px;
+    height: 150px;
+    width: auto;
+    margin: 4px;
+    object-fit: cover;
 }
 
 .modal-img-div{

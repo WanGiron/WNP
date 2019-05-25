@@ -39,7 +39,7 @@ class NavbarUser extends React.Component {
           {(!this.props.user ? (<li className="nav-item1"><Link to="/login-local" className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p className="nav-hover2" style={{ color: 'white' }}><i className="far fa-user"></i> Log In</p> </Link> </li>) : "")}
           {(this.props.user.name === 'Admin' ? (<li className="nav-item"><Link to="/admin" className="nav-link" style={{ textDecoration: "none", color: "black" }}><p className="nav-hover1" style={{ color: 'white' }}><strong>{this.props.user.name}</strong></p> </Link></li>) : "")}
           {(this.props.user.name !== 'Admin' ? (<li className="nav-item"><Link to="/usersite" className="nav-link" style={{ textDecoration: "none", color: "black" }}><p className="nav-hover1" style={{ color: 'white', fontSize: "20px" }}><strong>{this.props.user.name}</strong></p> </Link></li>) : "")}
-          {(this.props.user ? (<li className="nav-item1"><div className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p onClick={this.props.logOut} className="nav-hover2" style={{ color: 'white' }}><i className="far fa-user"></i> Log Out</p> </div></li>) : "")}
+          {(this.props.user ? (<li className="nav-item1"><Link className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p onClick={this.props.logOut} className="nav-hover2" style={{ color: 'white' }}><i className="far fa-user"></i> Log Out</p> </Link></li>) : "")}
         </ul>
       </nav>
     )

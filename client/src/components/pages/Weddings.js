@@ -68,13 +68,12 @@ class Weddings extends React.Component {
 
     render() {
         const photosUrl = this.state.arrPhoto.map(
-            (images) => <div><Images
+            (images) =><Images
                 email={this.state.name}
                 key={images.public_id}
                 id={images.public_id}
                 url={images.url}
                 handleClick={this.handleClick} />
-            </div>
 
         )
         return (
