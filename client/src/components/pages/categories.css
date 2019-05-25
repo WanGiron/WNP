@@ -3,26 +3,32 @@
     margin: auto;
     max-height: 100%;
     max-width: 100%;
+    /* -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; */
+  }
+
+.img-div{
+    height: 180px;
+    width: auto;
+    margin: 4px;
+    object-fit: cover;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
+}
 
-  .img-btn:hover {
+.img-div:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
   }
-
-.img-div{
-    height: 150px;
-    width: auto;
-    margin: 4px;
-    object-fit: cover;
-}
 
 .modal-img-div{
     
@@ -34,7 +40,8 @@
 }
 
 .photo-container{
-    max-width: 1300px;
+    max-width: 1800px;
+    /* border: solid black 1px; */
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
