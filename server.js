@@ -193,7 +193,6 @@ cloudinary.config({
 );
 
 //TO DO: database routes//
-// Users database favorites//
 app.get("/api/db/users", (req, res) => {
     db.users.findAll({}).then((results) => {
         res.json(results);

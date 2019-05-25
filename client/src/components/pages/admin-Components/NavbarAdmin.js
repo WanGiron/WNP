@@ -35,7 +35,14 @@ const NavbarAdmin = (props) => (
                 <Link to="/signup"
                     className="nav-link-2"
                     style={{ textDecoration: "none", color: "black" }}>
-                    <p className="nav-hover-2">Add Users</p>
+                    <p className="nav-hover-2">Add Clients</p>
+                </Link>
+            </p>
+            <p className="signup">
+                <Link to="/users"
+                    className="nav-link-2"
+                    style={{ textDecoration: "none", color: "black" }}>
+                    <p className="nav-hover-2">Clients</p>
                 </Link>
             </p>
 

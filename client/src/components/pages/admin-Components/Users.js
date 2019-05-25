@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Images from './Images1';
 import axios from "axios";
-// import "./admin.css";
+import "./admin.css";
 
 
 class Users extends Component {
@@ -17,21 +17,21 @@ class Users extends Component {
         this.getUsers();
         // this.setState({email: this.props.user.email});
     }
-    
+
 
 
     getUsers = () => {
         axios.get('/api/db/users')
             .then(res => {
-                this.setState({ users: res.data});
+                this.setState({ users: res.data });
                 console.log(res.data);
                 // let result = res.data;
                 console.log(this.state.users);
             })
             .catch(function (error) {
                 console.log(error);
-             });
-            
+            });
+
 
     }
 
@@ -42,23 +42,32 @@ class Users extends Component {
                 <div className='new-photo-admin'>
                     <h3><strong>Users</strong></h3>
                     <hr></hr>
-                    <p>Current users in the system</p>
+                    <h5>Current clients in the system</h5>
                     <div className="back-btn-admin">
 
                     </div>
 
                 </div>
                 <div className="photo-container-admin">
-                    {arr.map(user => (
-                    <ul>
-                    
-                        <li>{user.user_name}{user.user_email}</li> <span> {user.user_email}</span>
 
-                        
-                    
-                    
-                    
-                    </ul>))}
+                    {/* {arr.map(user => (
+                     <div className="alert-warning">
+                    <ul>
+                        <h3>{user.user_name}</h3>
+                        <li>{user.user_email}</li>
+                        <li>{user.user_password}</li>
+                    </ul>
+                    </div>))} */}
+                    <table>
+                        {arr.map(user => (
+                            <tr className="users-table-row">
+                                <td><strong>{user.user_name}:</strong></td>
+                                <td>{user.user_email}</td>
+                                <td>{user.user_password}</td>
+                            </tr>
+                        ))}
+                    </table>
+
                 </div>
             </div>
         );
