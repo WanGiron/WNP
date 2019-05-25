@@ -1,7 +1,7 @@
 .nav-user{
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* align-items: baseline; */
     padding-top: 10px;
    
@@ -9,7 +9,7 @@
     height: 50px;
     /* padding-bottom: ; */
     /* width: 80%; */
-    background: #353535;
+    background-image: url('./background.png');
     /* background: #0c0c0c; */
     z-index: 100;
     color: rgb(199, 100, 19);
@@ -18,16 +18,21 @@
 .WNP-header{
     /* font-size: 50px; */
     height: 30px;
-    margin: 0 auto;
+    margin-left: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
-.nav-user .navbar-logo{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    color: rgb(58, 58, 58);
+.nav-link{
+    width: fit-content;
+    border:solid white, 1px;
 }
+
+.nav-hover{
+    border:solid white, 1px;
+    padding: 8px;
+}
+
+
 
 .md-logo{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */

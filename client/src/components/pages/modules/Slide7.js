@@ -2,6 +2,8 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './images.css';
+import Navbar from '../../Navbar-main/Navbar-main';
+
 class Slide7 extends React.Component {
     state = {
         arrPhoto: []
@@ -45,12 +47,12 @@ class Slide7 extends React.Component {
         const arr2 = arr.map(i =>  <div className="wrapper"><img className="slide-img"src={i.url}/></div>)
 
         return (
-            <div>
+            <div >
                 <AliceCarousel items={arr2}
                     dotsDisabled={true}
                     buttonsDisabled={false}
                     responsive={this.responsive}
-                    autoPlayInterval={2000}
+                    autoPlayInterval={4000}
                     autoPlayDirection="rtl"
                     autoPlay={true}
                     fadeOutAnimation={true}

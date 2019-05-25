@@ -14,7 +14,7 @@ import { FacebookShareButton,
      TwitterShareButton,
      TwitterIcon,
      } from 'react-share';
-import './portfolio.css';
+import './userSite.css';
 
 class UserSite extends Component {
 

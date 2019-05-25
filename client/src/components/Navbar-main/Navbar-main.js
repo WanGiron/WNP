@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './navbar-main.css';
-import Face from './facebook.svg';
-import Ins from './instagram.svg';
 
 const Navbar = props => (
-  <nav className='nav-main navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"'>
+  <nav className='nav-main navbar navbar-expand flex-column flex-md-row'>
   
-    <ul>
+    <ul className="cat-navbar">
       <li className="nav-item1">
         <Link to="/weddings"
           className="nav-link nav-link1"
@@ -16,8 +14,7 @@ const Navbar = props => (
             </Link>
       </li>
 
-      <li className="nav-item1"
-      >
+      <li className="nav-item1">
         <Link to="/portraits"
           className="nav-link nav-link1"
           style={{ textDecoration: "none"}} >
