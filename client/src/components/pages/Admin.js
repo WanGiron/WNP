@@ -55,7 +55,7 @@ class Admin extends Component {
             return (
             
                 <div>
-                   
+                   <br/>
                 <Router>
                     <div className='admin-body'>
                     <NavbarAdmin />

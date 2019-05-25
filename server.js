@@ -129,9 +129,9 @@ app.get('/api/get_photos/weddings', (req, res) => {
 });
 
 // Getting images with tag 'antique'//
-app.get('/api/get_photos/antique', (req, res) => {
+app.get('/api/get_photos/portraits', (req, res) => {
     // cloudinary.v2.api.resources_by_tag('tag name') to get images with tag name
-    cloudinary.v2.api.resources_by_tag('antique',
+    cloudinary.v2.api.resources_by_tag('portraits',
     {max_results: 20},
         function (err, results) {
             // console.log(results)  
@@ -141,9 +141,9 @@ app.get('/api/get_photos/antique', (req, res) => {
 });
 
 // Getting images with tag 'decor'//
-app.get('/api/get_photos/decor', (req, res) => {
+app.get('/api/get_photos/engagements', (req, res) => {
     // cloudinary.v2.api.resources_by_tag('tag name') to get images with tag name
-    cloudinary.v2.api.resources_by_tag('decor',
+    cloudinary.v2.api.resources_by_tag('engagements',
     {max_results: 20},
         function (err, results) {
             // console.log(results)  

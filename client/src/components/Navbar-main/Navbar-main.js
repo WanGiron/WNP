@@ -23,7 +23,7 @@ const Navbar = props => (
       </li>
 
       <li className="nav-item1">
-        <Link to="/"
+        <Link to="/engagements"
           className="nav-link nav-link1"
           style={{ textDecoration: "none"}} >
           <span className="nav-hover">Engagements</span>

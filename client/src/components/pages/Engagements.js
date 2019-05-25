@@ -21,7 +21,7 @@ const customStyles = {
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement('#root');
 
-class Weddings extends React.Component {
+class Engagements extends React.Component {
     constructor() {
         super();
 
@@ -42,7 +42,7 @@ class Weddings extends React.Component {
     }
 
     getPhotos = () => {
-        fetch('/api/get_photos/weddings')
+        fetch('/api/get_photos/engagements')
             .then(res => res.json())
             .then(arrPhoto => this.setState({ arrPhoto: arrPhoto.resources }));
         console.log(this.state.list);
@@ -82,7 +82,7 @@ class Weddings extends React.Component {
                 <div>
                     <br />
                     <div className="jumbotron-fluid text-center">
-                        <i className="header-cat" style={{ fontSize: "30px" }}>Weddings</i>
+                        <i className="header-cat" style={{ fontSize: "30px" }}>Engagements</i>
                     </div>
                     <hr/>
                     <div className="container container-img">
@@ -107,4 +107,4 @@ class Weddings extends React.Component {
     }
 }
 
-export default Weddings;
+export default Engagements;

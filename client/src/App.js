@@ -11,6 +11,9 @@ import UserSite from './components/pages/UserSite';
 import Home from './components/Home';
 import Logout from './components/logout';
 import Weddings from './components/pages/Weddings';
+import Portraits from './components/pages/Portraits';
+import Engagements from './components/pages/Engagements';
+
 // import Portraits from './components/pages/Portraits';
 // import Results from "./pages/Results";
 
@@ -70,6 +73,9 @@ class App extends Component {
             <Route exact path='/' render={() => (<Home {...this.props} setUser={this.setUser} user={this.state.user}/>)}/>
             <Route exact path="/admin" render={() => (<Admin {...this.props} user={this.state.user} />)}/>            
             <Route exact path="/weddings" render={() => (<Weddings {...this.props} user={this.state.user} />)}/> 
+            <Route exact path="/portraits" render={() => (<Portraits {...this.props} user={this.state.user} />)}/> 
+            <Route exact path="/engagements" render={() => (<Engagements {...this.props} user={this.state.user} />)}/> 
+           
             {/* <Route exact path="/portraits" render={() => (<Portraits {...this.props} user={this.state.user} />)}/>               */}
             <Route exact path="/login-local" render={() => (<LoginLocal {...this.props} setUser={this.setUser} user={this.state.user} />)} />
             <Route exact path="/usersite" render={
