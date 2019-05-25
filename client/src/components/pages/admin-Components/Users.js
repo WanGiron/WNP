@@ -31,9 +31,20 @@ class Users extends Component {
             .catch(function (error) {
                 console.log(error);
             });
-
-
     }
+
+    //To delete users from data base// on progress...
+    handleClickDelete = (url) => {
+        const url2 = {
+            item_name: url,
+        };
+        // Send an AJAX POST-request//
+        axios.post("/api/db/favItemsDelete", url2)
+            .then(function (data) {
+            });
+            window.location.reload(); 
+    }
+
 
     render() {
         const arr = this.state.users;

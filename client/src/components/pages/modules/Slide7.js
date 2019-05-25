@@ -49,8 +49,8 @@ class Slide7 extends React.Component {
         return (
             <div >
                 <AliceCarousel items={arr2}
-                    dotsDisabled={true}
-                    buttonsDisabled={false}
+                    dotsDisabled={false}
+                    buttonsDisabled={true}
                     responsive={this.responsive}
                     autoPlayInterval={4000}
                     autoPlayDirection="rtl"
