@@ -9,7 +9,7 @@ function CardsModule(props) {
     return (
         <div className="container-fluid justify-content">
 
-            <h2 className="header-about">Portfolio</h2>
+            <h2 className="header-Portfolio">Portfolio</h2>
 
             <div className="row row-portfolio">
 

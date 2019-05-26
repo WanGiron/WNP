@@ -52,6 +52,17 @@
   margin: 0 center;
   max-width: 1440px;
 }
+.header-portfolio{
+  color: rgb(199, 100, 19);
+  font-size: 36px;
+  height: 36px;
+  padding-top: 10px;
+  margin-left: 30px;
+  width: 100%;
+  max-width: 1440px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
   .row-portfolio{
     display: flex;
     justify-content: center;
