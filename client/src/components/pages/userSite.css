@@ -1,5 +1,4 @@
 
-
 .slide-img1{
     margin: auto;
     max-height: 100%;
@@ -12,18 +11,17 @@
     justify-content: center;
     height: 600px;
     width: 80%;
-  }
-
+ }
 
   .alice-carousel__dots{
     margin: 0 auto;
     width: fit-content;
-  }
+ }
  .carousel-div{
  display: flex;
  justify-content: center;
   width: 100%;
-} 
+ } 
   .left, .right{
     position: relative;
     background-color: red;

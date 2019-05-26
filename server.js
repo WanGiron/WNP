@@ -214,10 +214,10 @@ app.post("/api/db/favItems", (req, res) => {
 
 // to delete favorite items in database //
 app.post("/api/db/favItemsDelete", (req, res) => {
-    db.favItems.destroy({
+    db.users.destroy({
         where: {
             // user_email: myEmail[0],
-            item_name: req.body.item_name
+            id: parseInt(req.body.id)
         }
     }).then((results) => {
         res.json(results);
