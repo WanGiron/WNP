@@ -37,6 +37,64 @@
     
   }
 
+  .cat-divs{
+    height: auto;
+    background-color: gray;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 10px ;
+    /* padding-left: 5px; */
+    padding: 0px; 
+    border: solid white 4px;
+    
+  }
+.container{
+  margin: 0 center
+  ;
+}
+  .row-portfolio{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 20px;
+  }
+
+  .image-overlay {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(186, 127, 0);
+  }
+
+  .cat-divs:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(209, 209, 209);
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
  /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {

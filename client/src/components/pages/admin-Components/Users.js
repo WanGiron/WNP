@@ -19,7 +19,7 @@ class Users extends Component {
         // this.setState({email: this.props.user.email});
     }
 
-    handleFullNameChange = (e) => {
+    handleId = (e) => {
         this.setState({
             idUser: e.target.value
         })
@@ -70,22 +70,30 @@ class Users extends Component {
                     <hr></hr>
                     <h5>Current clients in the system</h5>
                     <div>
-                        <form onSubmit={this.handleClickDelete}>
+                        <form onSubmit={this.handleClickDelete}
+                        className="form-group form-inline">
                             <label htmlFor="id">Enter Id number to be deleted</label>
                             <input
+                                className="form-control col-sm-1"
                                 type="number"
-                                value={this.state.fullName}
-                                onChange={this.handleFullNameChange}
+                                value={this.state.idUser}
+                                onChange={this.handleId}
                                 name="id" />
-                            <input type="submit" value="Submit" />
+                            <button type="submit" className="btn btn-submit mb-2 btn-sm" value="Submit">Submit</button>
                         </form>
                     </div>
 
                 </div>
                 <div className="photo-container-admin">
                     <table>
+                        <tr>
+                            <td><h4>Id</h4></td>
+                            <td><h4>Name</h4></td>
+                            <td><h4>User Name</h4></td>
+                            <td><h4>Password</h4></td>
+                        </tr>
                         {arr.map(user => (
-                            <tr className="users-table-row">
+                                <tr className="users-table-row">
                                 <td>{user.id}</td>
                                 <td><strong>{user.user_name}:</strong></td>
                                 <td>{user.user_email}</td>

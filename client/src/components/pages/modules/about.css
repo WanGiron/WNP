@@ -1,0 +1,38 @@
+.about-main-div{
+    margin: 0 auto;
+    width: 100%;
+    background-image: url('../../Navbar-user/background.png');
+
+}
+.about-wraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    /* margin-top: px; */
+}
+.img-div{
+    position: relative;
+    float: left;
+}
+
+.p-about-div{
+    display: inline-block;
+    width: 60%;
+    color: rgb(212, 212, 212);
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.header-about{
+    color: rgb(199, 100, 19);
+    font-size: 36px;
+    height: 36px;
+    padding-top: 10px;
+    margin-left: 30px;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
