@@ -7,7 +7,6 @@
   /* justify-content:center; */
   /* margin-top: 80px; */
   width: 100%;
-  max-width: 1440px;
   /* background-color: #ffffff; */
   background-image: url('./background.png');
   /* border-bottom: solid #854b09 4px; */
@@ -38,6 +37,7 @@
 }
 
 ul{
+  max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 4px;
   margin-left: 30px;
