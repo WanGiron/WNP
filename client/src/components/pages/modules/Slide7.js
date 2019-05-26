@@ -1,5 +1,6 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
+import { Link } from "react-router-dom";
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './images.css';
 import Navbar from '../../Navbar-main/Navbar-main';
@@ -13,8 +14,8 @@ class Slide7 extends React.Component {
         1024: { items: 1 },
     }
 
-    stagePadding={
-        paddingLeft: 20,     
+    stagePadding = {
+        paddingLeft: 20,
         paddingRight: 20
     }
 
@@ -30,7 +31,7 @@ class Slide7 extends React.Component {
                 arrPhoto: arrPhoto.resources
             }));
     }
-//To render thumbnails//
+    //To render thumbnails//
     renderThumbs = () => {
         const arrP = this.state.arrPhoto.map(i => i.url)
         return (<ul> {
@@ -44,10 +45,9 @@ class Slide7 extends React.Component {
     render() {
         const arr = this.state.arrPhoto;
         const items = arr.map(im => im.url);
-        const arr2 = arr.map(i =>  <div className="wrapper"><img className="slide-img"src={i.url}/></div>)
+        const arr2 = arr.map(i => <div className="wrapper"><img className="slide-img" src={i.url} /></div>)
 
         return (
-            <div >
                 <AliceCarousel items={arr2}
                     dotsDisabled={false}
                     buttonsDisabled={true}
@@ -57,13 +57,12 @@ class Slide7 extends React.Component {
                     autoPlay={true}
                     fadeOutAnimation={true}
                     ref={el => this.Carousel = el} />
-                    {/* <div className="carousel-div">
+                /* <div className="carousel-div">
                 <button onClick={() => this.Carousel._slidePrev()} className="left"> Prev button </button>
                 <button onClick={() => this.Carousel._slideNext()} className="right" > Next button </button>
                 {this.renderThumbs()}
-                </div> */}
-            </div>
-            
+                </div> */
+
         );
     }
 }
