@@ -7,9 +7,9 @@ import './cards.css'
 
 function CardsModule(props) {
     return (
-        <div className="container-fluid justify-content">
+        <div className="container justify-content">
 
-            <h2 className="header-Portfolio">Portfolio</h2>
+            <h2 className="header-portfolio">Portfolio</h2>
 
             <div className="row row-portfolio">
 
