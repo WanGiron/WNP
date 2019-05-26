@@ -49,8 +49,8 @@
     
   }
 .container{
-  margin: 0 center
-  ;
+  margin: 0 center;
+  max-width: 1440px;
 }
   .row-portfolio{
     display: flex;
