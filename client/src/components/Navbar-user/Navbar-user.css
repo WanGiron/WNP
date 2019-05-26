@@ -19,6 +19,7 @@
     font-size: 36px;
     height: 30px;
     /* letter-spacing: 1.5px; */
+    max-width: 1440;
     margin-left: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     

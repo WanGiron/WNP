@@ -90,7 +90,6 @@ class Users extends Component {
                                 <td><strong>{user.user_name}:</strong></td>
                                 <td>{user.user_email}</td>
                                 <td>{user.user_password}</td>
-                                <button onClick={this.handleClickDelete}>delete</button>
                             </tr>
                         ))}
                     </table>
