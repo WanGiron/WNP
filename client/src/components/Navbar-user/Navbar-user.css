@@ -1,6 +1,7 @@
 .nav-user{
     margin: 0 auto;
     display: flex;
+    position: relative;
     /* justify-content: space-between; */
     /* align-items: baseline; */
     padding-top: 10px;
@@ -24,15 +25,21 @@
 }
 
 .nav-user ul{
-    position: absolute;
+    /* position: relative; */
     top: 5px;
-    right: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: center ;
     align-items: center;
     margin-left: 10px;
     list-style-type: none;    
 }
+
+.login-menu{
+    position: absolute;
+    margin: 0 center;
+    right: 30px;
+}
+
 .nav-link{
     width: fit-content;
     

@@ -3,7 +3,7 @@ import ImgEng from './engagement.jpg';
 import ImgWed from './wedding.jpg';
 import ImgPort from './WNP_2906.jpg';
 import { Link } from "react-router-dom";
-import './cards.css'
+import './cards.css';
 
 function CardsModule(props) {
     return (
