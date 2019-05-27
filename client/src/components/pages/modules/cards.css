@@ -39,7 +39,7 @@
 
   .cat-divs{
     height: auto;
-    background-color: gray;
+    /* background-color: gray; */
     object-fit: cover;
     margin: 0 auto;
     margin-top: 10px ;
@@ -51,9 +51,10 @@
 .container{
   margin: 0 center;
   max-width: 1440px;
+  padding: 0px;
 }
 .header-portfolio{
-  color: rgb(199, 100, 19);
+  color: rgb(54, 54, 54);
   font-size: 36px;
   height: 36px;
   padding-top: 10px;
