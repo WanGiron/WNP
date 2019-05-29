@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialMedia from './SocialMedia';
 import AbourImg from './about.jpg';
 import './about.css';
 
@@ -18,6 +19,7 @@ class About extends React.Component {
                         marginRight: "auto"
                     }}>
                 </img>
+                {/* <SocialMedia/> */}
                 </div>
 
                 <div className="p-about-div">

@@ -5,12 +5,13 @@
     width: 80%;
     max-width: 1440px;
     /* border: solid rgb(187, 187, 187) 1px; */
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .contact-div{
     margin-top: 20px;
     margin: 0 auto;
+    max-width: 1440px;
     background-image: url('../../Navbar-user/background.png');
 }
 
@@ -38,6 +39,12 @@
     width: fit-content;
     /* border: solid rgb(190, 190, 190) 1px; */
 }
+.p-tag-contact{
+    margin-top: 20px;
+    color: rgb(212, 212, 212);
+    width: 300px;
+    text-align:center;
+}
 
 .contact-form{
     /* margin-top: 20px; */
@@ -57,4 +64,9 @@
 .form-label{
     margin-top: 10px;
     color: rgb(197, 197, 197);
+}
+
+.btn-contact{
+    background-color: rgb(199, 100, 19);
+    margin-top: 10px;
 }
