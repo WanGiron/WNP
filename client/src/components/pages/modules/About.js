@@ -8,14 +8,16 @@ class About extends React.Component {
         <div className="about-main-div">
         <h2 className="header-about">About me</h2>
             <div className="about-wraper">
-                <div className="img-about-div"
+                <div className="img-div-about">
+                <img className="img-about-div" src={AbourImg}
                     style={{
-                        backgroundImage: `url(${AbourImg})`,
-                        backgroundSize: "cover",
                         height: "200px",
-                        width: "250px",
-                        margin: "5px"
+                        width: "auto",
+                        display:"block",
+                        marginLeft: "auto",
+                        marginRight: "auto"
                     }}>
+                </img>
                 </div>
 
                 <div className="p-about-div">
