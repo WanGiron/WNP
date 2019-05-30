@@ -38,14 +38,14 @@ class Contact extends React.Component {
                             name="name"
                             type="text"
                             className="form-input"
-                            placeholder="Enter name" />
-                        <label className="form-label">Email: </label>
+                            placeholder="Enter Name" />
+                        <label className="form-label">E-mail: </label>
                         <input
                             onChange={this.handleInput}
                             name="name"
                             type="text"
                             className="form-input"
-                            placeholder="Enter Email" />
+                            placeholder="Enter E-mail" />
                         <label className="form-label">Phone Number: </label>
                         <input
                             onChange={this.handleInput}

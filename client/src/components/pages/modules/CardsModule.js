@@ -7,14 +7,14 @@ import './cards.css';
 
 function CardsModule(props) {
     return (
-        <div className="container justify-content">
+        <div className="container-div-cards">
 
             <h2 className="header-portfolio">Portfolio</h2>
 
             <div className="row row-portfolio">
 
                 <div className="cat-divs col-4">
-                    <img src={ImgEng} alt="Avatar" className="image-overlay" />
+                    <img src={ImgEng} alt="Cat" className="image-overlay" />
                     <Link to="/engagements">
                         <div className="overlay">
                             <div className="text">ENGAGEMENTS</div>
@@ -23,7 +23,7 @@ function CardsModule(props) {
                 </div>
 
                 <div className="cat-divs col-4">
-                    <img src={ImgWed} alt="Avatar" className="image-overlay" />
+                    <img src={ImgWed} alt="Cat" className="image-overlay" />
                     <Link to="/weddings">
                         <div className="overlay">
                             <div className="text">WEDDINGS</div>
@@ -32,7 +32,7 @@ function CardsModule(props) {
                 </div>
 
                 <div className="cat-divs col-4">
-                    <img src={ImgPort} alt="Avatar" className="image-overlay" />
+                    <img src={ImgPort} alt="Cat" className="image-overlay" />
                     <Link to="/portraits">
                         <div className="overlay">
                             <div className="text">PORTRAITS</div>

@@ -40,10 +40,13 @@
     /* border: solid rgb(190, 190, 190) 1px; */
 }
 .p-tag-contact{
-    margin-top: 20px;
-    color: rgb(212, 212, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(97, 97, 97);
     width: 300px;
     text-align:center;
+    background-color: rgb(247, 247, 247);
+    border-top: solid rgb(161, 161, 161) 1px;
 }
 
 .contact-form{

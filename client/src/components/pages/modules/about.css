@@ -39,3 +39,14 @@
     width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.social-icon{
+    /* border-top: solid rgb(199, 100, 19) 4px; */
+    /* border-top: solid rgb(221, 221, 221) 1px; */
+    /* background-color: rgb(199, 100, 19); */
+    background-color: rgb(247, 247, 247);
+    border-top: solid rgb(161, 161, 161) 1px;
+
+    text-align: center;
+    /* opacity: 0.4; */
+}
