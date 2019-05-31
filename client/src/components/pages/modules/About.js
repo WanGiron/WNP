@@ -26,17 +26,11 @@ class About extends React.Component {
 
                 <div className="p-about-div">
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                           eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                         sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                         sanctus est Lorem ipsum dolor sit amet.
+                    Hi there! Thank you for checking out my website. My name is Will and along with my wife Lady, we have been photographing weddings and events for close to a decade now. 
+                    Weddings are our specialty! We absolutely love to capture couples on their journey to the altar, and while a wedding day can be stressful and chaotic, 
+                    we make sure that the photography is at least not one of your worries! We strive to artistically capture all the beautiful details of one of the most important days of your lives,
+                    from the genuine smiles of your guests to the groom’s surprised and tearful face when he sees his bride for the first time. We do all this while being as “invisible” as possible. 
+                    Our desire is for the couple to enjoy and remember their journey to the altar forever, very much like we did when we walked to the altar ourselves! 
                     </p>
                 </div>
              </div>

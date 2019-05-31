@@ -1,6 +1,7 @@
 .main-contact-div{
+    padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
@@ -26,7 +27,7 @@
     font-size: 26px;
     height: 36px;
     padding-top: 10px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     width: 100%;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -42,6 +43,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     color: rgb(97, 97, 97);
+    font-weight: 300;
+    word-spacing: 1.6px;
     width: 400px;
     font-size: 17px;
     text-align:center;
@@ -52,7 +55,7 @@
 .contact-form{
     /* margin-top: 20px; */
     margin-left: 30px;
-    width: 60%;
+    width: 100%;
     /* background-color: rgba(177, 100, 27, 0.192); */
     
     /* border: solid rgb(202, 202, 202) 1px; */

@@ -25,15 +25,15 @@ class Nuka extends React.Component {
 
     render() {
         const arr = this.state.arrPhoto;
-        const items = arr.map(im => im.url);
-        const arr2 = arr.map(i => <div className="wrapper"><img className="slide-img" src={i.url} /></div>)
+        const items = arr.map(im => im.secure_url);
+        const arr2 = arr.map(i => <div className="wrapper"><img className="slide-img" src={i.secure_url} /></div>)
 
         return (
 
             <Carousel
-            autoplay={true}
-            transitionMode={'fade'}
-            >
+                autoplay={true}
+                transitionMode={'fade'}
+                autoplayInterval={4000}>
                 {arr2}
             </Carousel>
 
