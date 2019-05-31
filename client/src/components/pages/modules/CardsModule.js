@@ -11,7 +11,7 @@ function CardsModule(props) {
 
             <h2 className="header-portfolio">Portfolio</h2>
 
-            <div className="row row-portfolio">
+            <div className="row-portfolio">
 
                 <div className="cat-divs col-4">
                     <img src={ImgEng} alt="Cat" className="image-overlay" />

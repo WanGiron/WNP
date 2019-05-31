@@ -33,9 +33,9 @@
     
   }
 .container-div-cards{
-  margin: 0 center;
+  margin: 0 auto;
   max-width: 1440px;
-  padding-left:0px ;
+  /* padding-left:0px ; */
   padding-bottom: 20px;
 }
 
@@ -54,12 +54,14 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 70%;
+    padding-top: 10px ;
+    width: 80%;
     max-width: 1440px;
     padding-bottom: 20px;
   }
 
   .image-overlay {
+    margin: 0 auto;
     display: block;
     width: 90%;
     height: auto;
@@ -69,6 +71,7 @@
   
   .overlay {
     position: absolute;
+    margin: 0 auto;
     top: 0;
     bottom: 0;
     left: 0;
