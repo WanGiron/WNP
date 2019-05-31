@@ -15,7 +15,7 @@ class Welcome extends Component {
                 <div className='new-photo-admin'>
                     <h3>New Photo Upload for <strong>Page</strong></h3>
                     <hr></hr>
-                    <p>Make sure to include "Decor", "Modern", "Luxury", or "Antique" tag in "advance options" when upload new photo</p>
+                    <p>Make sure to include "Weddings", "Portraits" or "Engagements" tag in "advance options" when uploading new photos</p>
                     
                 </div>
                 <div className="back-btn-admin">

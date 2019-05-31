@@ -1,5 +1,5 @@
 .footer{
-    border-top:solid  rgb(221, 221, 221) 10px;
+    /* border-top:solid  rgb(221, 221, 221) 10px; */
     color: rgb(199, 199, 199);
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
     margin: 0 auto;
     text-align: center;
     /* color: rgb(199, 100, 19); */
-    color: rgb(192, 192, 192);
+    /* color: rgb(192, 192, 192); */
 }
 
   

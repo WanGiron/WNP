@@ -108,31 +108,11 @@
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
-  .card {
-    flex: 100%;
-    max-width: 100%;
-    display: none;
-  }
-  .card{
-    margin-top: 10px;
-  }
-  .btn-card{
-    display: block;
-    width: 100%;
-    margin: 10px ;
-    margin-left: 40px;
-  }
-
-  .row-btn{
-    display: flex;
-    justify-content: center;
-}
+  
   
 }
 
 @media screen and (max-width: 1050px) {
-  .card1 {
-    margin: 10px;
-  }
+  
   
 }

@@ -13,16 +13,15 @@ class SignUp extends Component {
     }
 
     handleInputChange = event => {
-        // copy
         let name = event.target.name;
         let value = event.target.value;
-        //modify
 
         //setState
         this.setState({
             [name]: value
         })
     }
+
     // || this.state.email || this.state.password
     handleFormSubmit = event => {
         event.preventDefault();
@@ -40,9 +39,7 @@ class SignUp extends Component {
             })
         }
 
-
     }
-
 
     render() {
         if (this.props.user && this.props.user.email) {
@@ -77,7 +74,6 @@ class SignUp extends Component {
                                     placeholder="Type in Email"
                                     id="email"
                                     required />
-
                                 <hr/>
                                 <label htmlFor="password" >Password:</label>
                                 <input
@@ -90,7 +86,7 @@ class SignUp extends Component {
                                     id="password"
                                     required />
                                      <hr/>
-                                <input type="Submit" onClick={this.handleFormSubmit} className="mt-2 btn-sm btn-submit text-uppercase" value="Submit" />
+                                <input type="Submit" onClick={this.handleFormSubmit} className="btn btn-dark bt-sm" value="Submit" />
                             </form>
                             {this.state.errorMessage}
                         </div>

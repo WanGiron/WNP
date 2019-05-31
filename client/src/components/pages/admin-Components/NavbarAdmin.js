@@ -46,6 +46,14 @@ const NavbarAdmin = (props) => (
                     <p className="nav-hover-2">Clients</p>
                 </Link>
             </div>
+            <hr/>
+            <div className="nav-item-admin">
+                <Link to="/messages"
+                    className="nav-link-2"
+                    style={{ textDecoration: "none", color: "black" }}>
+                    <p className="nav-hover-2">Messages from site</p>
+                </Link>
+            </div>
 
         </div>
     </div>

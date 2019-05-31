@@ -200,19 +200,54 @@ app.get("/api/db/users", (req, res) => {
     });
 });
 
-// to store favorites in database //
-app.post("/api/db/favItems", (req, res) => {
-    db.favItems.create({
-        // user_email: myEmail.slice(-1)[0],
+// // to store favorites in database //
+// app.post("/api/db/favItems", (req, res) => {
+//     db.favItems.create({
+//         // user_email: myEmail.slice(-1)[0],
+//         user_email: req.body.user_email,
+//         item_name: req.body.item_name
+//     }).then((results) => {
+//         res.json(results);
+//         console.log("succes");
+//     });
+// });
+
+// to store messages from 'contact me' component //
+app.post("/api/db/contact-me", (req, res) => {
+    db.contact.create({
+        user_name: req.body.user_name,
         user_email: req.body.user_email,
-        item_name: req.body.item_name
+        phone_number: req.body.phone_number,
+        user_message: req.body.user_message
     }).then((results) => {
         res.json(results);
         console.log("succes");
     });
 });
 
-// to delete favorite items in database //
+// To get messages from database //
+app.get("/api/db/get-messages", (req, res) => {
+    db.contact.findAll({}).then((results) => {
+        res.json(results);
+        console.log("succes");
+    });
+});
+
+
+// to delete Clients from database //
+app.post("/api/db/message-delete", (req, res) => {
+    db.contact.destroy({
+        where: {
+            // user_email: myEmail[0],
+            id: parseInt(req.body.id)
+        }
+    }).then((results) => {
+        res.json(results);
+        console.log("succes");
+    });
+});
+
+// to delete Clients from database //
 app.post("/api/db/favItemsDelete", (req, res) => {
     db.users.destroy({
         where: {
@@ -224,6 +259,7 @@ app.post("/api/db/favItemsDelete", (req, res) => {
         console.log("succes");
     });
 });
+
 
 // to delete favorite items in database //
 app.post("/api/db/createUser", (req, res) => {

@@ -6,7 +6,7 @@ import "./admin.css";
 import { stringify } from 'querystring';
 
 
-class Users extends Component {
+class Messages extends Component {
     // Initialize the state
     state = {
         users: [],
@@ -33,7 +33,7 @@ class Users extends Component {
 
 
     getUsers = () => {
-        axios.get('/api/db/users')
+        axios.get('/api/db/get-messages')
             .then(res => {
                 this.setState({ users: res.data });
                 console.log(res.data);
@@ -47,15 +47,15 @@ class Users extends Component {
 
     //To delete users from data base// on progress...
     handleClickDelete = () => {
-        const url2 = {
+        const eraseMessage = {
             id: this.state.idUser
         };
 
         // Send an AJAX POST-request//
-        axios.post("/api/db/favItemsDelete", url2)
+        axios.post("/api/db/message-delete", eraseMessage)
             .then(function (data) {
             });
-        alert("Client removed!");
+        alert("Message erased!");
         window.location.reload(); 
     }
 
@@ -66,19 +66,22 @@ class Users extends Component {
         return (
             <div className="container-admin">
                 <div className='new-photo-admin'>
-                    <h3><strong>Users</strong></h3>
+                    <h3><strong>Messages</strong></h3>
                     <hr></hr>
-                    <h5>Current clients in the system</h5>
+                    <h5>Messages from site</h5>
                     <div>
                         <form onSubmit={this.handleClickDelete}
                         className="form-group form-inline">
                             <label htmlFor="id">Enter Id number to be deleted</label>
                             <input
-                                className="input-user-delete"
+                                className="input-messages"
                                 type="number"
                                 value={this.state.idUser}
                                 onChange={this.handleId}
-                                name="id" />
+                                name="id"
+                                margin={{
+                                    padding:"4px"
+                                }} />
                             <button type="submit" className="btn btn-dark btn-sm" value="Submit">Submit</button>
                         </form>
                     </div>
@@ -88,21 +91,24 @@ class Users extends Component {
                     <table>
                         <tbody>
                         <tr>
-                            <td><h4>Id</h4></td>
+                            <td><h4>ID</h4></td>
                             <td><h4>Name</h4></td>
-                            <td><h4>User Name</h4></td>
-                            <td><h4>Password</h4></td>
+                            <td><h4>Email</h4></td>
+                            <td><h4>Phone Number</h4></td>
+                            <td><h4>Message</h4></td>
                         </tr>
                         {arr.map(user => (
                                 <tr className="users-table-row" key={user.id}>
                                 <td>{user.id}</td>
-                                <td><strong>{user.user_name}</strong></td>
+                                <td>{user.user_name}</td>
                                 <td>{user.user_email}</td>
-                                <td>{user.user_password}</td>
+                                <td>{user.phone_number}</td>
+                                <td>{user.user_message}</td>
                             </tr>
                         ))}
                         </tbody>
-                    </table>              
+                    </table>
+
                 </div>
             </div>
         );
@@ -112,4 +118,4 @@ class Users extends Component {
 
 }
 
-export default Users;
+export default Messages;

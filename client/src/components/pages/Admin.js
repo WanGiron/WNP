@@ -11,6 +11,7 @@ import NavbarAdmin from './admin-Components/NavbarAdmin';
 import SignUp from './admin-Components/SignUp';
 import Welcome from './admin-Components/Welcome';
 import Users from './admin-Components/Users';
+import Messages from './admin-Components/Messages';
 
 class Admin extends Component {
     // Initialize the state
@@ -65,6 +66,7 @@ class Admin extends Component {
                         <Route exact path='/weddingsadmin' component={WeddingsAdmin} />
                         <Route path='/signup' component={SignUp} />
                         <Route path='/users' component={Users} />
+                        <Route path='/messages' component={Messages}/>
                         </Switch>
     
                     </div>

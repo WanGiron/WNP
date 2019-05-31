@@ -34,7 +34,7 @@
   }
 
 .img-contact-div{
-    float: left;
+    /* float: left; */
     margin-top: 20px;
     width: fit-content;
     /* border: solid rgb(190, 190, 190) 1px; */
