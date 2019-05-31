@@ -4,14 +4,15 @@ import CardsModule from './pages/modules/CardsModule';
 import Footer from './pages/modules/Footer';
 import Contact from './pages/modules/Contact';
 import About from './pages/modules/About';
-
+import Nuka from './pages/modules/Nuka';
 
 class Home extends React.Component {
     render() {
         return (
             <div>
                 {/* <NavbarMain/> */}
-                <Slide7/>
+                {/* <Slide7/> */}
+                <Nuka/>
                 <About/>
                 <CardsModule/>
                 <Contact/>

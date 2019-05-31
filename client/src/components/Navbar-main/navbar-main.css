@@ -10,13 +10,13 @@
   width: 100%;
   max-width: 1200px;
   /* background-color: #ffffff; */
-  background-image: url('./background.png');
+  /* background-image: url('./background.png'); */
   /* border-bottom: solid #854b09 4px; */
   /* box-shadow: 4px 4px 6px #8b8b8b; */
 }
 
 .nav-link{
-  color: rgb(207, 207, 207);
+  color: rgb(141, 64, 13);
   padding: 0px;
   font-size: 16px;
   padding-bottom: 10px;

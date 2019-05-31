@@ -14,8 +14,8 @@ class About extends React.Component {
                 <div className="img-div-about">
                 <img className="img-about-div" src={AbourImg}
                     style={{
-                        height: "200px",
-                        width: "auto",
+                        height: "auto",
+                        width: "400px",
                         display:"block",
                         marginLeft: "auto",
                         marginRight: "auto"

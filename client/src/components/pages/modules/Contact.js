@@ -72,8 +72,8 @@ class Contact extends React.Component {
                     <div className="img-contact-div">
                         <img src={ImgContact}
                             style={{
-                                height: "200px",
-                                width: "auto",
+                                height: "auto",
+                                width: "400px",
                                 display: "block",
                                 marginLeft: "auto",
                                 marginRight: "auto"
@@ -111,7 +111,7 @@ class Contact extends React.Component {
                             className="form-input"
                             placeholder="Enter Phone Number" />
                         <label className="form-label">Message: </label>
-                        <input
+                        <textarea
                             value={this.state.message}
                             onChange={this.handleInputChange}
                             name="message"
