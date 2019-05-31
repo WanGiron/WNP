@@ -3,7 +3,7 @@
     justify-content: center;
     margin: 0 auto;
     width: 80%;
-    max-width: 1440px;
+    max-width: 1200px;
     /* border: solid rgb(187, 187, 187) 1px; */
     padding-bottom: 40px;
 }
@@ -11,7 +11,7 @@
 .contact-div{
     margin-top: 20px;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1200px;
     background-image: url('../../Navbar-user/background.png');
 }
 
@@ -22,16 +22,15 @@
 } */
 
 .header-h2{
-    color: rgb(199, 100, 19);
-    font-size: 36px;
+    color: rgb(197, 127, 70);
+    font-size: 26px;
     height: 36px;
     padding-top: 10px;
     margin-left: 30px;
     width: 100%;
-    max-width: 1440px;
-    /* border: solid rgb(197, 197, 197) 1px; */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .img-contact-div{
     /* float: left; */

@@ -56,7 +56,8 @@ class Slide7 extends React.Component {
                     autoPlayDirection="rtl"
                     autoPlay={true}
                     fadeOutAnimation={true}
-                    ref={el => this.Carousel = el} />
+                    ref={el => this.Carousel = el}>
+                        </AliceCarousel>
                 /* <div className="carousel-div">
                 <button onClick={() => this.Carousel._slidePrev()} className="left"> Prev button </button>
                 <button onClick={() => this.Carousel._slideNext()} className="right" > Next button </button>
