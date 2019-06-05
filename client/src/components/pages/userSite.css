@@ -108,7 +108,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px){
-    .wrapper{
+    .thumbnails-list{
       flex: 100%;
      height: fit-content;
     }
