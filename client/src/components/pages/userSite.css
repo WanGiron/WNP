@@ -37,10 +37,15 @@
   margin: 0 auto;
   /* border: solid black 1px; */
   width: 70%;
+  height: fit-content;
   max-width: 1200px;
   padding-bottom: 40px;
 }
 
+.thumbnail-list{
+  height: fit-content;
+  padding-bottom: 30px;
+}
 .thumbnail-image {
     display: block; 
     width: auto;
@@ -56,7 +61,7 @@
   padding: 0px;
   margin: 4px;
   width:fit-content;
-  height: fit-content;
+  height: 80px;
   border: none;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
