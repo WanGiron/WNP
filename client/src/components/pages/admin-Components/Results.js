@@ -75,8 +75,8 @@ class Results extends Component {
             .then(function (data) {
             });
 
-            alert('Photo deleted');
-            window.location.reload(); 
+            alert("Image deleted");
+            // window.location.href="/admin";
     }
     render() {
         
