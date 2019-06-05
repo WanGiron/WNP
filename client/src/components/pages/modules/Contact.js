@@ -71,12 +71,13 @@ class Contact extends React.Component {
                 <div className="main-contact-div">
                     <div className="img-contact-div">
                         <img src={ImgContact}
+                        className="img-contact"
                             style={{
                                 height: "auto",
-                                width: "400px",
+                                // width: "400px",
                                 display: "block",
-                                marginLeft: "auto",
-                                marginRight: "auto"
+                                // marginLeft: "auto",
+                                // marginRight: "auto"
                             }} />
                         <p className="p-tag-contact">Share more information about your upcoming event!
                          or just say hi!

@@ -13,8 +13,8 @@ class Home extends React.Component {
                 {/* <NavbarMain/> */}
                 {/* <Slide7/> */}
                 <Nuka/>
-                <About/>
                 <CardsModule/>
+                <About/>
                 <Contact/>
                 {/* <Footer/> */}
                 {/* <CardsModule /> */}

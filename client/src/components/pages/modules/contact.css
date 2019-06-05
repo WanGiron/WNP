@@ -7,6 +7,7 @@
     max-width: 1200px;
     /* border: solid rgb(187, 187, 187) 1px; */
     padding-bottom: 40px;
+    border-bottom: solid rgb(218, 218, 218) 1px;
 }
 
 .contact-div{
@@ -38,6 +39,10 @@
     margin-top: 20px;
     width: fit-content;
     /* border: solid rgb(190, 190, 190) 1px; */
+}
+
+.img-contact{
+    width: 400px;
 }
 .p-tag-contact{
     padding-top: 10px;
@@ -76,3 +81,18 @@
     background-color: rgb(199, 100, 19);
     margin-top: 10px;
 }
+
+@media screen and (max-width:600px) {
+    .main-contact-div{
+        display: contents;
+    }
+    .p-about-div, .img-div-about{
+      width:90%;
+      margin: 0 auto;
+    }
+
+    .img-contact{
+        width: 350px;
+        margin: 0 auto;
+    }
+  }

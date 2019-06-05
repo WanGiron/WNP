@@ -26,7 +26,7 @@ class Nuka extends React.Component {
     render() {
         const arr = this.state.arrPhoto;
         const items = arr.map(im => im.secure_url);
-        const arr2 = arr.map(i => <div className="wrapper"><img className="slide-img" src={i.secure_url} /></div>)
+        const arr2 = arr.map(i => <div className="wrapper" key={i.public_id}><img className="slide-img" src={i.secure_url} /></div>)
 
         return (
 

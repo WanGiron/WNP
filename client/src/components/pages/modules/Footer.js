@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <nav className="navbar nav">
-                <p className="copyright nav-item" style={{ fontSize: "12px" }}>All rights reserved William Navas 2019</p>
+                <p className="copyright nav-item" style={{ fontSize: "12px" }}>All Rights Reserved William Navas 2019</p>
             </nav>
             <br/>
         </div>

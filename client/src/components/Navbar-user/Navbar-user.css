@@ -86,12 +86,14 @@
 
 @media screen and (max-width: 600px) {
 .img-logo{
-    width: 400px;
-    margin-top: -20px;
+    width: 350px;
+    /* margin-top: -20px; */
 }
-.nav-user{
-    height:50px;
-    padding: 0px;
-    padding-top: 10px;
+
+.login-menu{
+    width: 100%;
+    margin-top: -80px;
+    margin-right: -160px;
 }
+
 }

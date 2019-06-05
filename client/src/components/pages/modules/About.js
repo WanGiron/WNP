@@ -12,13 +12,13 @@ class About extends React.Component {
         <h2 className="header-about">About me</h2>
             <div className="about-wraper">
                 <div className="img-div-about">
-                <img className="img-about-div" src={AbourImg}
+                <img className="img-about" src={AbourImg}
                     style={{
                         height: "auto",
-                        width: "400px",
+                        // width: "400px",
                         display:"block",
-                        marginLeft: "auto",
-                        marginRight: "auto"
+                        // marginLeft: "auto",
+                        // marginRight: "auto"
                     }}>
                 </img>
                 <SocialMedia/>

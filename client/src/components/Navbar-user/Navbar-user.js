@@ -25,15 +25,7 @@ class NavbarUser extends React.Component {
   render() {
 
     return (
-      <nav className='nav-user'>
-
-        {/* <Link to="/"
-          className="navbar-logo navbar-brand mr-0 mr-md-2 mt-0"
-          aria-label="Bootstrap"
-          style={{ textDecoration: "none", color: "black" }}>
-          <i className="fa fa-home" style={{ marginLeft: "10px", marginTop: "6px", color: "darkGray", fontSize: "30px" }}></i>
-        </Link> */}
-        
+      <nav className='nav-user'> 
        <Link to='/' style={{ textDecoration: "none", color: "rgb(199, 100, 19)" }}><div className="WNP-header"><img src={Logo} style={{width:"300px", height:'auto'}}/></div></Link>
         <ul className="login-menu">
           {/* {(!this.props.user ? (<div className="nav-item"> <Link to="/signup" className="nav-link" style={{ textDecoration: "none", color: "black" }}> <p className="nav-hover" style={{ color: 'black' }}><i className="far fa-user"></i>Sign Up</p> </Link> </div>) : "")} */}
