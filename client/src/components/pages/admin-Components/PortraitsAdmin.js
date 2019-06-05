@@ -25,7 +25,7 @@ class ModernAdmin extends Component {
 
     // Retrieves the list of items from the Express app
     getPhotos = () => {
-        fetch('/api/get_photos/weddings')
+        fetch('/api/get_photos/portraits')
             .then(res => res.json())
             .then(arrPhoto => this.setState({ arrPhoto: arrPhoto.resources }));
         // console.log(this.state.list);
@@ -63,9 +63,9 @@ class ModernAdmin extends Component {
         return (
             <div className="container-admin">
                 <div className='new-photo-admin'>
-                    <h3>New Photo Upload for <strong>Weddings</strong></h3>
+                    <h3>New Photo Upload for <strong>Portraits</strong></h3>
                     <hr></hr>
-                    <p>Make sure to include "weddings" tag in "advance options" when upload new photo</p>
+                    <p>Make sure to include "portraits" tag in "advance options" when upload new photo</p>
                     <div className="back-btn-admin">
                     <Widget/> 
                     <Link to="/admin"

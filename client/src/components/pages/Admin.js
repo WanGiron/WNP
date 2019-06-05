@@ -7,11 +7,14 @@ import Widget from '../PhotoWidgetUploader';
 
 import './admin-Components/admin.css';
 import WeddingsAdmin from './admin-Components/WeddingsAdmin';
+import EngagementsAdmin from './admin-Components/EngagementsAdmin';
+import PortraitsAdmin from './admin-Components/PortraitsAdmin';
 import NavbarAdmin from './admin-Components/NavbarAdmin';
 import SignUp from './admin-Components/SignUp';
 import Welcome from './admin-Components/Welcome';
 import Users from './admin-Components/Users';
 import Messages from './admin-Components/Messages';
+import Results from './admin-Components/Results';
 
 class Admin extends Component {
     // Initialize the state
@@ -64,9 +67,12 @@ class Admin extends Component {
                         <Switch>
                         <Route path='/admin' component={Welcome} />
                         <Route exact path='/weddingsadmin' component={WeddingsAdmin} />
+                        <Route exact path='/portraitsadmin' component={PortraitsAdmin} />
+                        <Route exact path='/engagementsadmin' component={EngagementsAdmin} />
                         <Route path='/signup' component={SignUp} />
                         <Route path='/users' component={Users} />
                         <Route path='/messages' component={Messages}/>
+                        <Route exact path="/results/:query" render={() => (<Results {...this.props} setUser={this.setUser} user={this.state.user}/>)} component={Results} />
                         </Switch>
     
                     </div>

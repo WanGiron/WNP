@@ -55,13 +55,18 @@ class Contact extends React.Component {
             user_message: this.state.message
         }
 
+        if (this.state.name === "" || this.state.email === "" || this.state.phoneNumber === "" || this.state.message === "") {
+            alert(null + "Please fill-out all entries");
+
+        }
+        else{
         axios.post('/api/db/contact-me', newMessge)
         .then(function (data) {
             alert('Thank you!');
             window.location.reload(); 
         });
       }   
-
+    }
 
 
     render() {
@@ -108,7 +113,7 @@ class Contact extends React.Component {
                             value={this.state.phoneNumber}
                             onChange={this.handleInputChange}
                             name="phoneNumber"
-                            type="text"
+                            type="number"
                             className="form-input"
                             placeholder="Enter Phone Number" />
                         <label className="form-label">Message: </label>

@@ -6,6 +6,14 @@ import { Link } from "react-router-dom";
 const NavbarAdmin = (props) => (
     <div className='nav-bar-admin'>
         <div>
+        <div className="nav-item-admin">
+                <Link to="/admin"
+                    className="nav-link-2"
+                    style={{ textDecoration: "none", color: "black" }}>
+                    <p className="nav-hover-2">Administrator</p>
+                </Link>
+            </div>
+            <hr/>
             <div className="nav-item-admin">
                 <Link to="/weddingsadmin"
                     className="nav-link-2"
