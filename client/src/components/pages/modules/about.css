@@ -63,7 +63,7 @@
 }
 
 /* Use a media query to add a break point at 800px: */
-@media screen and (max-width:600px) {
+@media (min-width: 320px) and (max-width: 480px){
     .about-wraper{
         display: contents;
     }
@@ -82,5 +82,9 @@
     }
     .img-about{
         width: 350px;
+    }
+
+    .social-icon{
+        background-color: none;
     }
   }

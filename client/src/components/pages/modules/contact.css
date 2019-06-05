@@ -82,17 +82,20 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width:600px) {
+@media (min-width: 320px) and (max-width: 480px){
     .main-contact-div{
         display: contents;
     }
-    .p-about-div, .img-div-about{
-      width:90%;
-      margin: 0 auto;
-    }
-
     .img-contact{
         width: 350px;
         margin: 0 auto;
     }
+    .contact-form{
+        width: 380px;
+        margin: 0 auto;
+    }
+    .p-tag-contact{
+        background-color: none;
+    }
+
   }
