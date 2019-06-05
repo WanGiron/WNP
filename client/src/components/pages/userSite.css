@@ -109,11 +109,11 @@
 
 @media (min-width: 320px) and (max-width: 480px){
     .thumbnails-list{
-      flex: 100%;
-     height: fit-content;
+      display: flex;
+      height: fit-content;
     }
     .slide-img{
-      height: 100px;
+      height: 80px;
     }
     
   }
